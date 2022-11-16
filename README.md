@@ -1,15 +1,17 @@
 # Uniswap V2 Token Swap Example
 
-This project demonstrates how to deploy two ERC-20 tokens to blockchain and swap them through Uniswap V2
+This project demonstrates how to deploy two ERC-20 tokens to blockchain and swap them through Uniswap V2 on mainnet fork
 
 ## Structure:
 `contracts` directory contains Solidity contracts for Bar and Foo ERC-20 tokens
 
 `scripts/const.ts` contains UniswapRouterV2 address, abi and bytecode
 
+`UniswapRouterV2Address = "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"`
+
 `scripts/swap.ts` contains main script logic:
 
-1. Deploy FooToken and BarToken to blockchain
+1. Deploy `FooToken` and `BarToken` to blockchain
 2. Add liquidity for Foo and Bar tokens with `UniswapRouterV2`
 3. Swap tokens by calling `swapExactTokensForTokens` on `UniswapRouterV2`
 
